@@ -1,0 +1,33 @@
+﻿{
+  "configurations": [
+    {
+      "name": "x64-Debug",
+      "generator": "Visual Studio 17 2022 Win64",
+      "configurationType": "Debug",
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "architecture": "x64",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "variables": [
+        {
+          "name": "CMAKE_TOOLCHAIN_FILE",
+          "value": "C:/Users/maxij/vcpkg/scripts/buildsystems/vcpkg.cmake",
+          "type": "PATH"
+        },
+        {
+          "name": "CMAKE_PREFIX_PATH",
+          "value": "C:/Users/maxij/vcpkg/installed/x64-windows",
+          "type": "PATH"
+        },
+        {
+          "name": "CMAKE_WORKING_DIRECTORY",
+          "value": "${projectDir}",
+          "type": "PATH"
+        }
+      ],
+      "cacheVariables": {
+        "VCPKG_TARGET_TRIPLET": "x64-windows"
+      }
+    }
+  ]
+}
